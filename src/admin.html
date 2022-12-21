@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedacito de cielo</title>
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mitr:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <figure class="logo">
+          <a href="index.html">
+          <img
+            src="../src/assets/icons/pasteleria.png"
+            alt="Logo pedacito de cielo"
+          />
+        </a>
+        </figure>
+        <div class="menu">
+          <ul class="nav-menu">
+            <li><a href="#orders-table">Pedidos</a></li>
+            <li><a href="#available-material">Materia prima</a></li>
+            <li><a href="#invoices">Facturas</a></li>
+          </ul>
+          <div class="search-bar">
+            <input type="text" placeholder="Buscar" />
+            <button class="search-btn" title="Search">
+              <img src="../src/assets/icons/magnifying-glass-solid.svg" />
+            </button>
+          </div>
+          <div class="logged-user">
+            <ul>
+              <img src="../src/assets/icons/user-solid.svg" />
+              <li>
+                Administrador
+                <ul class="dropdown">
+                  <li><a href="#">Editar perfil</a></li>
+                  <li><a href="#">Notificaciones</a></li>
+                  <li><a href="#">Salir</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="orders-visualize" id="orders-table">
+        <h1>Pedidos</h1>
+        <table>
+          <tr>
+            <th>Número de orden</th>
+            <th>Nombre del cliente</th>
+            <th>Sabores</th>
+            <th>Adornos</th>
+            <th>Tamaño</th>
+            <th>Fecha de entrega</th>
+            <th>Hora de entrega</th>
+            <th>Descripción</th>
+            <th>Imágen de referencia</th>
+            <th>Mensaje</th>
+          </tr>
+          <tr>
+            <td>1022</td>
+            <td>Ana López</td>
+            <td>Vainilla, Durazno</td>
+            <td>Flores naturales</td>
+            <td>Chico</td>
+            <td>20/sep/2022</td>
+            <td>10:35 am</td>
+            <td>En color blanco,cuadrado</td>
+            <td><img src="../src/assets/images/decoration.jpg"></td>
+            <td>Feliz cumpleaños amiga, en el pastel</td>
+          </tr>
+          <tr>
+            <td>1023</td>
+            <td>Cristian Ruiz</td>
+            <td>Berries</td>
+            <td>Flores Naturales, Frutas, Betún</td>
+            <td>Grande</td>
+            <td>10/Nov/2020</td>
+            <td>16:00 hrs</td>
+            <td>Redondo, parecido a fairy berries</td>
+            <td><img src="../src/assets/images/berriesCake.jpg"></td>
+            <td>Sin mensaje</td>
+          </tr>
+          <tr>
+            <td>1030</td>
+            <td>Natalia Gómez Hernández</td>
+            <td>Nuez, Chocolate, Rompope</td>
+            <td>Galletas, Chocolatería</td>
+            <td>Mediano</td>
+            <td>10/Nov/2022</td>
+            <td>11:00 hrs</td>
+            <td>En forma de corazón</td>
+            <td>Sin imagen</td>
+            <td>Feliz aniversario, en tarjeta</td>
+          </tr>
+        </table>
+      </div>
+      <div  id="available-material">
+        <h2>Materia Prima disponible</h2>
+        <div class="available-material">
+        <div class="available-flavors">
+          <h3>Sabores disponibles</h3>
+          <table>
+           <tr>
+            <th>Sabor</th>
+            <th>Cantidad disponible</th>
+           </tr>
+           <tr>
+            <td>Chocolate</td>
+            <td>14</td>
+           </tr>
+           <tr>
+            <td>Nuez</td>
+            <td>10</td>
+           </tr>
+           <tr>
+            <td>Capuchino</td>
+            <td>20</td>
+           </tr>
+           <tr>
+            <td>Vainilla</td>
+            <td>1</td>
+           </tr>
+           <tr>
+            <td>Fresa</td>
+            <td>15</td>
+           </tr>
+           <tr>
+            <td>Berries</td>
+            <td>2</td>
+           </tr>
+           <tr>
+            <td>Cereza</td>
+            <td>3</td>
+           </tr>
+           <tr>
+            <td>Mazapán</td>
+            <td>Sin existencia</td>
+           </tr>
+           <tr>
+            <td>Durazno</td>
+            <td>6</td>
+           </tr>
+           <tr>
+            <td>Rompope</td>
+            <td>7</td>
+           </tr>
+          </table>
+        </div>
+        <div class="available-decor">
+          <h3>Adornos disponibles</h3>
+          <table>
+            <tr>
+              <th>Adornos</th>
+              <th>Cantidad disponible</th>
+            </tr>
+          <tr>
+            <td>Cake topper</td>
+            <td>100</td>
+           </tr>
+           <tr>
+            <td>Flores Naturales</td>
+            <td>50</td>
+           </tr>
+           <tr>
+            <td>Listón</td>
+            <td>10</td>
+           </tr>
+           <tr>
+            <td>Perlas</td>
+            <td>60</td>
+           </tr>
+           <tr>
+            <td>Mirror</td>
+            <td>30</td>
+           </tr>
+           <tr>
+            <td>Frutas</td>
+            <td>10</td>
+           </tr>
+           <tr>
+            <td>Betún</td>
+            <td>Sin existencia</td>
+           </tr>
+           <tr>
+            <td>Globos</td>
+            <td>75</td>
+           </tr>
+           <tr>
+            <td>Galletas</td>
+            <td>30</td>
+           </tr>
+           <tr>
+            <td>Chocolatería</td>
+            <td>45</td>
+           </tr>
+          </table>
+        </div>
+      </div>
+      </div>
+      <div class="invoices" id="invoices">
+        <h2>Facturas</h2>
+        <form>
+          <label for="monthly-invoices">Selecciona un mes</label>
+          <select>
+            <option>Enero</option>
+            <option>Febrero</option>
+            <option>Marzo</option>
+            <option>Abril</option>
+            <option>Mayo</option>
+            <option>Junio</option>
+            <option>Julio</option>
+            <option>Agosto</option>
+            <option>Septiembre</option>
+            <option>Octubre</option>
+            <option>Noviembre</option>
+            <option>Diciembre</option>
+          </select>
+        </form>
+      </div>
+    </main>
+    <footer>  
+        <div class="social-media">
+            <h3>Síguenos: 
+          <a href="#"><img src="../src/assets/icons/facebook.svg" alt="facebook" /></a>
+          <a href="#"><img src="../src/assets/icons/instagram.svg" alt="Instagram" /></a>
+          <a href="#"><img src="../src/assets/icons/tiktok.svg" alt="Tiktok" /></a></h3>
+        </div>
+        <div class="copyright">
+          <img src="../src/assets/icons/pasteleria.png" />
+          <h4>
+            Pedacito de Cielo, Pastelerías, 2022
+          </h4>
+        </div>
+        <div class="contact-info" id="contact-info">
+          <p>Dirección: El Jazmín 210, Col. El Prado</p>
+          <p>Teléfono: 0180052132</p>
+          <p>Horarios de atención: Lunes a Sábado de 9 am a 8 pm</p>
+        </div>
+  </footer>
+  </body>
+</html>

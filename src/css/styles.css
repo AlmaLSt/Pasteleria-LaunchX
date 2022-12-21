@@ -1,0 +1,521 @@
+body{
+    font-family: 'Mitr', sans-serif;
+    background-color: #FAF7F0;
+    padding: 0;
+    
+}
+header{
+    background-color: #FFE1E1;
+   
+}
+ul{
+    list-style: none;   
+ }
+
+ main{
+    width: 80%;
+    margin: auto;
+    color: #9F8772;
+    font-size: 25px;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.logo img{
+    height: 200px;
+    width: 200px;    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #A0522D;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 1s all;
+}
+
+.menu li a:hover{
+    font-size: 32px;
+    color: #C2B092;
+}
+
+.search-bar, .search-bar * {
+    font-family: 'Mitr', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none; 
+}
+.search-bar input{
+   width: 280px;
+   margin-left: 50px;
+   border-radius: 10px 0px 0px 10px; 
+}
+.search-btn {
+    border-radius:  0px 10px 10px 0px;
+    margin-left: 0; 
+}
+
+.search-btn img{
+    width: 30px;
+}
+
+.user-account img{
+    width: 25px;
+}
+
+.slider{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: change 20s infinite;
+    animation-direction: alternate;
+}
+
+.slider li{
+    width: 100%;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.seasonal-title{
+    position: absolute;
+    color: #C2B092;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bolder;
+    background-color: #EDE4E0;
+    border-radius: 0px 10px 10px 0px;
+}
+
+h1,h2{
+    color: #A0522D;  
+    font-size: 45px;
+    font-weight: bold;
+    text-decoration:wavy;
+    text-align: center;
+    border-style:double;
+}
+
+h3,h4{
+    color: #A0522D; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.promotions-cards{
+    display: flex;
+    margin: 7px;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.promotions-cards img{
+    width: 90%;
+}
+
+.opinions-cards{
+    display: flex;
+    margin: 20px;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    font-style: oblique;
+    margin-bottom: 100px;
+}
+.client-name{
+    font-weight: bold;
+}
+
+.message{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    margin-bottom: 200px;
+}
+
+.message img{
+    width: 50%;
+    margin-right: 30px;
+}
+footer{
+    height: 300px;
+    background-color: #FFE1E1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 15%;
+    justify-content: center;
+}
+
+.social-media img{
+    width: 20px;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.copyright{
+    display: grid;
+}
+.copyright img{
+    width: 150px;
+    margin-left: 30%;
+    margin-top: 30px;
+}
+
+.contact-info{
+    font-size: 23px;
+    font-weight: bold;
+    color: #A0522D; 
+}
+
+@keyframes change{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+/* Products css*/
+.products{
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.products img{
+    width: 100%;
+}
+
+.flavor-items{
+    display: flex;
+    align-items: center;
+}
+
+.flavor-items img{
+    width: 100%;
+}
+.flavor-list{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+}
+
+.flavor-list li{
+    background-color: #d3cec5;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+}
+
+.decor-items{
+    display: flex;
+    align-items: center;
+}
+
+.decor-items img{
+    width: 100%;
+}
+.decor-list{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+}
+
+.decor-list li{
+    background-color: #d3cec5;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+}
+
+.product-item:hover, .flavor-list li:hover, .decor-list li:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: 1s all;
+}
+
+/*Orders css*/
+
+
+.orders{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.orders label{
+    background-color: #d3cec5;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+    text-align: left;
+}
+.orders input{
+    width:20px;
+    height: 20px;
+}
+
+.flavors-select, .decor-select, .size-select{
+    display: grid;  
+}
+.form{
+    width: 40%;
+    margin: auto;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.form-data label, .form-data legend{
+    display: block;
+    margin: 0 0 10px;
+    
+}
+
+.form-data input{
+    display: block;
+    width: 80%;
+    font-size: 25px ;
+    margin: 0 0 20px
+}
+
+.form-data textarea{
+    font-size: 25px;
+}
+
+#send-form{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #d3cec5;
+    color: #9F8772;
+    transition: 1s all;
+}
+
+#send-form:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #FFE1E1
+}
+
+/*Log in css*/
+
+.header-login{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-login img{
+    height: 200px;
+    width: 200px; 
+}
+
+.log-message{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+   
+    
+}
+.log-in, .sign-in{
+    background-color: #FFE1E1 ;
+    text-align:center;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.log-data{
+    width: 600px;
+}
+.log-data label{
+    display: block;
+    margin: 0 0 20px;
+}
+
+.log-data input{
+    display: block;
+    width: 70%;
+    font-size: 25px;
+    margin: 20px auto;
+}
+
+.log-data button{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #d3cec5;
+    color: #9F8772;
+    transition: 1s all;
+}
+
+.log-data button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    /* background-color: #FFE1E1 */
+}
+
+#back-home{
+    position: static;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: fit-content;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #d3cec5;
+    transition: 1s all;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: #9F8772;
+}
+
+#admin{
+    position: static;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: fit-content;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #d3cec5;
+    transition: 1s all;
+}
+
+/*Admin css*/
+
+.logged-user{
+    display: flex;
+    color: #A0522D;
+    font-weight: bold;
+    position: relative;
+    padding: 20px;
+}
+.logged-user img{
+    width: 25px;
+}
+
+.dropdown{
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    background-color: #d3cec5;
+    margin-left: -50px;
+    text-align: center;
+}
+
+.dropdown li a{
+    transition: none;
+}
+
+.logged-user:hover .dropdown{
+    visibility: visible;
+    transition: 1s all;
+}
+
+table, th, tr, td{
+border: 1px solid #C2B092;
+text-align: center;
+}
+
+table img{
+    width: 300px;
+    height: 200px;
+}
+
+
+.available-material{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.invoices label, select{
+    font-size: 1.2em;
+    
+}
+
+.invoices form{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-bottom: 100px;
+}

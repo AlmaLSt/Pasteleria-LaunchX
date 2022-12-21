@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedacito de cielo</title>
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mitr:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-login">
+        <button id="back-home"> <a href="index.html">Regresar</a></button>
+      <figure class="login-logo">
+        <img
+          src="../src/assets/icons/pasteleria.png"
+          alt="Logo pedacito de cielo"
+        />
+      </figure>
+      <button id="admin"> <a href="admin.html">Soy administrador</a></button>
+    </header>
+    <main>
+      <h1>Inicia sesión o crea tu cuenta</h1>
+      <div class="container">
+        <div class="log-in">
+          <p class="log-message">¡Bienvenido!</p>
+          <form class="log-data">
+            <label for="email">
+              Ingresa tu e-mail <input type="email" />
+            </label>
+            <label for="password">
+              Ingresa tu contraseña <input type="text" />
+            </label>
+            <button>Entrar</button>
+          </form>
+        </div>
+        <div class="sign-in">
+          <p class="log-message">Crea tu cuenta</p>
+          <form class="log-data">
+            <label for="name"> Nombre(s) <input type="text" required /> </label>
+            <label for="surname">
+              Apellidos <input type="text" required />
+            </label>
+            <label for="email">
+              Ingresa tu e-mail <input type="email" />
+            </label>
+            <label for="password">
+              Ingresa tu contraseña <input type="text" />
+            </label>
+            <label for="password">
+              Confirma tu contraseña <input type="text" />
+            </label>
+            <button>Registrarme</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
